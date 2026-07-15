@@ -1,0 +1,238 @@
+/* ===========================
+   SERVICES
+=========================== */
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.service-card{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card i{
+    font-size:45px;
+    color:#006400;
+    margin-bottom:15px;
+}
+
+.service-card h3{
+    color:#006400;
+}
+
+/* ===========================
+   CEO
+=========================== */
+
+.ceo-card{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.ceo-img{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    background:
+    linear-gradient(
+    rgba(0, 80, 40, 0.65),
+    rgba(0, 80, 40, 0.65)
+    ),
+    url("images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero-content h1{
+    color:#ffffff;
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:#ffffff;
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.floating-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.floating-whatsapp:hover{
+    transform:scale(1.1);
+}
+
+.footer-logo{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:auto;
+}
+
+.team-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.gallery-item img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.logo-img{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0b1f3a;
+    padding: 8px 6%;   /* Reduced from 15px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #ffd700;
+}
+
+.menu-btn{
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Prevent hero section from hiding under fixed header */
+.hero{
+    margin-top: 80px;
+}
+header{
+    background: url("images/header-bg.jpg") center/cover no-repeat;
+}
+.hero{
+    margin-top: 60px;
+}
+
+.logo{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-links a{
+    font-size: 15px;
+}
+
+.menu-btn{
+    font-size: 24px;
+}
+
+.about{
+    background: url("images/about-bg.jpg") center/cover no-repeat;
+}
+
+.services{
+    background: url("images/services-bg.jpg") center/cover no-repeat;
+}
+
+.products{
+    background: url("images/products-bg.jpg") center/cover no-repeat;
+}
+
+.gallery{
+    background: url("images/gallery-bg.jpg") center/cover no-repeat;
+}
+
+.contact{
+    background: url("images/contact-bg.jpg") center/cover no-repeat;
+}
